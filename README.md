@@ -1,5 +1,3 @@
-/* README.md */
-/*
 # 🐟 Fish Business Register (শ্রীউলা ঘেরের রেজিস্টার)
 
 A simple, live, and cloud-synced fish sales and expense tracking web application, designed for daily business use in rural fisheries. Built with HTML, JavaScript, and Firebase Realtime Database.
@@ -72,15 +70,6 @@ fish-business-app/
 ├── style.css
 ├── README.md
 ```
-
----
-
-## 📌 Getting Started
-
-1. Clone the repository or [Download as ZIP](https://github.com/your-username/fish-business-app)
-2. Upload `index.html` to your own Firebase hosting or GitHub Pages
-3. Customize Firebase config in `script.js` if needed
-
 ---
 
 ## 📜 License
