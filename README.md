@@ -1,48 +1,97 @@
-# শ্রীউলা ঘেরের রেজিস্টার (Fish Business Register)
+/* README.md */
+/*
+# 🐟 Fish Business Register (শ্রীউলা ঘেরের রেজিস্টার)
 
-This is a web application designed to record and calculate daily fish sales and expenses for a fish business. The app uses **Firebase Realtime Database** to store live data accessible from multiple devices in real time.
+A simple, live, and cloud-synced fish sales and expense tracking web application, designed for daily business use in rural fisheries. Built with HTML, JavaScript, and Firebase Realtime Database.
 
-## Features
+---
 
-- Daily records of fish sales (morning and evening quantities, rates, totals)
-- Daily expense records with reasons and amounts
-- Calculates total sales, total expenses, and remaining balance in the fund
-- Real-time data syncing across devices using Firebase
-- Simple Bengali language interface for local users
+## 📆 Features
 
-## Technologies Used
+- 📅 **Automatic Daily Record Tracking**
+- 🌅 **Morning & Evening Sales Entry**:
+  - Quantity in kg
+  - Price per kg
+  - Total selling price
+- 💰 **Expense Tracking**:
+  - Date, Reason & Amount
+- 📊 **Live Totals Calculation**:
+  - Total daily sales
+  - Total expenses
+  - Remaining fund balance
+- ☁️ **Cloud Storage with Firebase**:
+  - All data stored and synced in real-time
 
-- **HTML5, CSS3, JavaScript (ES6 modules)**
-- **Firebase Realtime Database** for backend data storage
-- Firebase JavaScript SDK v9 (modular imports)
-- Responsive design and modern web standards
+---
 
-## 📂 Project Structure
+## 🚀 Live Preview
+
+🌐 [https://abdullariaz.com/sr](https://abdullariaz.com/sr)
+
+---
+
+## 🔧 Technologies Used
+
+| Tool           | Purpose                        |
+|----------------|--------------------------------|
+| **HTML/CSS**   | Web UI Structure & Styling     |
+| **JavaScript** | Logic & DOM manipulation       |
+| **Firebase**   | Realtime Database & Hosting    |
+
+---
+
+## 🧚S Firebase Configuration
+
+The app uses Firebase Realtime Database to save all sales and expenses. Config is initialized with:
+
+```js
+import { initializeApp } from "firebase/app";
+import { getDatabase } from "firebase/database";
+
+const firebaseConfig = {
+  apiKey: "AIzaSy...",
+  authDomain: "...firebaseapp.com",
+  databaseURL: "https://...firebaseio.com",
+  ...
+};
+
+const app = initializeApp(firebaseConfig);
+const database = getDatabase(app);
+```
+
+> Make sure to secure your database with proper Firebase rules before going into production.
+
+---
+
+## 📁 Folder Structure
 
 ```
 fish-business-app/
 ├── index.html
-├── firebase.js
-├── app.js
+├── script.js
+├── style.css
 ├── README.md
-└── _assets/
-    ├── *.css
-    ├── *.js
-    └── images/
 ```
 
-## 🚀 Getting Started
+---
 
-1. Clone or download this repository to your local machine.
-2. Replace the placeholder assets in the `_assets` folder with your actual CSS, JS, and image files (if necessary).
-3. Update `firebase.js` with your Firebase project's configuration if you want to use your own backend.
-4. Open `index.html` in a web browser or deploy the app on any static hosting service such as GitHub Pages, Netlify, or Firebase Hosting.
-5. The app will connect to Firebase Realtime Database to fetch and display sales and expense data in real time.
+## 📌 Getting Started
 
-## 🤝 Contributing
+1. Clone the repository or [Download as ZIP](https://github.com/your-username/fish-business-app)
+2. Upload `index.html` to your own Firebase hosting or GitHub Pages
+3. Customize Firebase config in `script.js` if needed
 
-Contributions and suggestions are welcome! Feel free to open issues or submit pull requests.
+---
 
-## 📄 License
+## 📜 License
 
-This project is licensed under the MIT License © 2025 Abdullah Al Riaz.
+This project is open-source and free to use.
+
+---
+
+## 👤 Author
+
+**Md. Abdullah Al Riaz**  
+🔗 [abdullariaz.com](https://abdullariaz.com)  
+📧 hello@abdullariaz.com
+*/
