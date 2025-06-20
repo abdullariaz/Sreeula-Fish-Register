@@ -24,7 +24,7 @@ A simple, live, and cloud-synced fish sales and expense tracking web application
 
 ## 🚀 Live Preview
 
-🌐 [https://abdullariaz.com/sr](https://abdullariaz.com/sr)
+🌐 [CLICK HERE](https://abdullariaz.com/sr)
 
 ---
 
