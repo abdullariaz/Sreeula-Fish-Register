@@ -38,27 +38,6 @@ A simple, live, and cloud-synced fish sales and expense tracking web application
 
 ---
 
-## 🧚S Firebase Configuration
-
-The app uses Firebase Realtime Database to save all sales and expenses. Config is initialized with:
-
-```js
-import { initializeApp } from "firebase/app";
-import { getDatabase } from "firebase/database";
-
-const firebaseConfig = {
-  apiKey: "AIzaSy...",
-  authDomain: "...firebaseapp.com",
-  databaseURL: "https://...firebaseio.com",
-  ...
-};
-
-const app = initializeApp(firebaseConfig);
-const database = getDatabase(app);
-```
-
-> Make sure to secure your database with proper Firebase rules before going into production.
-
 ---
 
 ## 📁 Folder Structure
